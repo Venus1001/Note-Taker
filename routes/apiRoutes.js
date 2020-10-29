@@ -14,7 +14,7 @@ module.exports = function (app) {
 
         app.get("/api/notes/:id", (req, res) => {
             res.json(notes[req.params.id]);
-        })
+        });
 
         app.post("/api/notes", function (req, res) {
             let writeNewNotes = req.body;
